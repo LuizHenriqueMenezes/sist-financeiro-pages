@@ -1,0 +1,283 @@
+/* Estilos gerais */
+body {
+    background-color: #FEFEFA;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+    /* Impede a rolagem horizontal */
+}
+
+/* Barra de navegação */
+.barra {
+    background-color: black;
+    color: #FEEFFA;
+    display: flex;
+    justify-content: space-between;
+    /* Adiciona espaçamento entre os itens */
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    position: relative;
+    /* Remover 'fixed' para tornar o menu não fixo */
+    z-index: 1;
+    /* Adicionar um z-index para garantir que o menu fique sobreposto a outros elementos */
+}
+
+/* Manter o h1 à esquerda do menu */
+.barra h1 {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Centralizar apenas as opções do menu */
+.barra nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    /* Centralizar as opções de menu */
+}
+
+.barra nav ul li {
+    margin-right: 30px;
+}
+
+.barra nav ul li:first-child {
+    margin-right: 15px;
+    /* Distância menor entre as opções */
+}
+
+.barra nav ul li a {
+    text-decoration: none;
+    color: #fefefa;
+    font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+
+    /* Barra de navegação responsiva */
+    .barra {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .barra nav {
+        margin-top: 10px;
+    }
+
+    .barra nav ul {
+        margin-top: 10px;
+    }
+
+    .barra nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .corpo-index,
+    .img-index {
+        width: 100%;
+        text-align: center;
+    }
+
+    .corpo-index {
+        padding: 20px;
+    }
+}
+
+.button-45 {
+    align-items: center;
+    background-color: #a3cf9c;
+    background-position: 0 0;
+    border: 1px solid #15400e;
+    border-radius: 11px;
+    box-sizing: border-box;
+    color: #FEFEFA;
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 33.4929px;
+    list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg) none;
+    padding: 2px 12px;
+    text-align: left;
+    text-decoration: none;
+    text-shadow: none;
+    text-underline-offset: 1px;
+    transition: border .2s ease-in-out, box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    word-break: break-word;
+}
+
+.button-45:active,
+.button-45:hover,
+.button-45:focus {
+    outline: 0;
+}
+
+
+.button-45:active {
+    background-color: rgb(42, 214, 42);
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    color: #FFFFFF;
+}
+
+.button-45:hover {
+    background-color: #2e8b57;
+    border-color: #FAA4A4;
+}
+
+.button-45:active:hover,
+.button-45:focus:hover,
+.button-45:focus {
+    background-color: rgb(42, 214, 42);
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    color: #FFFFFF;
+}
+
+.contaContainer{
+    display: flex;
+    justify-content: space-between; /* Adiciona espaçamento entre os itens */
+    align-items: center;
+    margin: 30px;
+}
+
+.contaBox{
+    display: flex;
+    justify-content: space-between; /* Adiciona espaçamento entre os itens */
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.contaBox h3{
+    margin-right: 12px;
+}
+
+.button-46 {
+    align-items: center;
+    background-color: #b81414;
+    background-position: 0 0;
+    border: 1px solid red;
+    border-radius: 11px;
+    box-sizing: border-box;
+    color: #FEFEFA;
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 33.4929px;
+    list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg) none;
+    padding: 2px 12px;
+    text-align: left;
+    text-decoration: none;
+    text-shadow: none;
+    text-underline-offset: 1px;
+    transition: border .2s ease-in-out, box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    word-break: break-word;
+}
+
+.button-46:active,
+.button-46:hover,
+.button-46:focus {
+    outline: 0;
+}
+
+
+.button-46:active {
+    background-color: #ec5353;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    color: #FFFFFF;
+}
+
+.button-46:hover {
+    background-color: #ec5353;
+    border-color: #FAA4A4;
+}
+
+.button-46:active:hover,
+.button-46:focus:hover,
+.button-46:focus {
+    background-color: #df0000;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    color: #FFFFFF;
+}
+
+.button-47 {
+    align-items: center;
+    background-color: rgb(67, 67, 236);
+    background-position: 0 0;
+    border: 1px solid #00008b;
+    border-radius: 11px;
+    box-sizing: border-box;
+    color: #FEFEFA;
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 33.4929px;
+    list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg) none;
+    padding: 2px 12px;
+    text-align: left;
+    text-decoration: none;
+    text-shadow: none;
+    text-underline-offset: 1px;
+    transition: border .2s ease-in-out, box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    word-break: break-word;
+}
+
+.button-47:active,
+.button-47:hover,
+.button-47:focus {
+    outline: 0;
+}
+
+
+.button-47:active {
+    background-color: lightblue;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    color: #FFFFFF;
+}
+
+.button-47:hover {
+    background-color: lightblue;
+    border-color: #FAA4A4;
+}
+
+.button-47:active:hover,
+.button-47:focus:hover,
+.button-47:focus {
+    background-color: blue;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    color: #FFFFFF;
+}
+
+.button-group {
+    display: flex;
+    align-items: center;
+}
+
+.button-group button {
+    margin-right: 10px;
+}
